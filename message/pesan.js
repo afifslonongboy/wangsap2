@@ -246,7 +246,7 @@ module.exports = async (conn, msg, m, setting, store) => {
                         { quoted: msg }
                     );
                     break;
-                case prefix + 'kick': {
+                case 'kick': {
                     if (!isGroup) reply('Khusus Grup')
                     if (!isGroupAdmins) reply('Khusus Admin')
                     if (!isBotGroupAdmins) reply('Bot Bukan Admin')
